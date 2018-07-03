@@ -1,0 +1,26 @@
+{
+  "name": "joi-postalcode",
+  "version": "1.0.0",
+  "description": "Postal code validation for all countries using Joi",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postal-codes-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "joi": "^13.4.0",
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
+  },
+  "keywords": [
+    "joi",
+    "extension",
+    "postal code",
+    "zipcode"
+  ]
+}
