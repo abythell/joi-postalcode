@@ -1,6 +1,6 @@
 {
   "name": "joi-postalcode",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Joi extension for validating postal codes worldwide using postal-codes-js",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "postversion": "git push && git push --tags"
   },
   "author": "Andrew Bythell <abythell@ieee.org>",
-  "license": "GPL-3",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "postal-codes-js": "^1.0.0"
   },
