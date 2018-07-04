@@ -10,7 +10,7 @@ Get the required packages:
 npm install joi joi-postalcode
 ```
 
-Create an extended instance of Joi, then specifying the 2-letter
+Create an extended instance of Joi, then specify the 2-letter
 ISO country code as a parameter to `postalCode` in your schema:
 
 ```
