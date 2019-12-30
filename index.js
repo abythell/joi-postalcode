@@ -29,7 +29,7 @@ module.exports = joi => ({
       if (!params.cc) params.cc = 'us'
       if (postalCodes.validate(params.cc, value) !== true) {
         // returned value is an error string
-        return this.createError('string.postalCode', {v: value, cc: params.cc}, state, options)
+        return this.createError('string.postalCode', { v: value, cc: params.cc }, state, options)
       } else {
         return value
       }

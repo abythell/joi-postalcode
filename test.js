@@ -6,12 +6,12 @@ const postalJoi = Joi.extend(require('./index.js'))
 
 describe('joi-postalcode', () => {
   it('returns value for valid postal codes', () => {
-    let result = postalJoi.string().postalCode('CA').validate('A1A 1A1')
+    const result = postalJoi.string().postalCode('CA').validate('A1A 1A1')
     expect(result.error).to.equal(null)
     expect(result.value).to.equal('A1A 1A1')
   })
   it('returns error for invalid postal codes', () => {
-    let result = postalJoi.string().postalCode('CA').validate('A1A 111')
+    const result = postalJoi.string().postalCode('CA').validate('A1A 111')
     expect(result.error).to.be.instanceof(Error)
     expect(result.error.message).to.be.a('string')
   })
@@ -29,7 +29,7 @@ describe('joi-postalcode', () => {
     }).to.throw('ISO 3166-1')
   })
   it('defaults to ISO country code US', () => {
-    let result = postalJoi.string().postalCode().validate('90210')
+    const result = postalJoi.string().postalCode().validate('90210')
     expect(result.error).to.equal(null)
     expect(result.value).to.equal('90210')
   })
