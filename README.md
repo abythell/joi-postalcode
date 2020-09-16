@@ -1,6 +1,6 @@
 # joi-postalcode
 
-[Joi](https://www.npmjs.com/package/joi) extension for validating postal codes
+[Joi](https://www.npmjs.com/package/joi) ( < v16) extension for validating postal codes
 worldwide using [postal-codes-js](https://www.npmjs.com/package/postal-codes-js).
 
 ## How to Use
