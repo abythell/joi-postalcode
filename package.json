@@ -1,6 +1,6 @@
 {
   "name": "joi-postalcode",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Joi extension for validating postal codes worldwide using postal-codes-js",
   "main": "index.js",
   "scripts": {
