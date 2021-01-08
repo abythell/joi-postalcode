@@ -1,7 +1,12 @@
 # joi-postalcode
 
-[Joi](https://www.npmjs.com/package/joi) ( < v16) extension for validating postal codes
+[Joi](https://www.npmjs.com/package/joi) extension for validating postal codes
 worldwide using [postal-codes-js](https://www.npmjs.com/package/postal-codes-js).
+
+## Versions
+
+* Version 1.X is for Joi < v14
+* Version 2.X (latest) is for Joi > v14
 
 ## How to Use
 
@@ -18,7 +23,7 @@ const Joi = require('joi')
 const joiPostalCode = Joi.extend(require('joi-postalcode'))
 joiPostalCode.string().postalCode('CA').validate('A1A 1A1') // Canada
 joiPostalCode.string().postalCode('').validate('90210') // Default country is US
-joiPostalCode.string().postalCode('tr').validate('33150') // Turkey
+joiPostalCode.string().postalCode('TR').validate('33150') // Turkey
 ```
 
 See [List of postal codes](https://en.wikipedia.org/wiki/List_of_postal_codes) for
